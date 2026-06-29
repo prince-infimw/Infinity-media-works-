@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Infinity Media Works — Digital Growth & Creative Solutions</title>
+<meta name="description" content="Infinity Media Works — Professional web design, mobile apps, digital marketing, graphic design, video production and automation for businesses worldwide. Starting from $7."/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Infinity Media Works — Digital Growth & Creative Solutions"/>
+<meta property="og:description" content="Professional web design, mobile apps, marketing & automation for businesses worldwide. Starting from $7. Fast delivery. Free revisions."/>
+<meta property="og:url" content="https://gregarious-bavarois-85a55c.netlify.app/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Infinity Media Works — Digital Growth & Creative Solutions"/>
+<meta name="twitter:description" content="Professional web design, mobile apps, marketing & automation for businesses worldwide. Starting from $7."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+<style>
+/* ── RESET & ROOT ────────────────────────────────────────── */
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+:root{
+  --brand:#7c3aed;--brand-l:#a78bfa;--brand-d:#4c1d95;
+  --accent:#06b6d4;--green:#10b981;
+  --bg:#06040f;--bg2:#0d0820;--card:#140e28;
+  --border:rgba(124,58,237,.18);--border2:rgba(124,58,237,.28);
+  --txt:#e2e0f0;--txt2:#9490b8;--txt3:#6b6890;
+}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--bg);color:var(--txt);
+  overflow-x:hidden;line-height:1.6;
+}
+h1,h2,h3,h4{font-family:'Syne',sans-serif;line-height:1.15;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+button{font-family:'DM Sans',sans-serif;}
+
+/* ── SCROLLBAR ───────────────────────────────────────────── */
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--brand-d);border-radius:4px;}
+::-webkit-scrollbar-thumb:hover{background:var(--brand);}
+
+/* ── GRAIN OVERLAY ───────────────────────────────────────── */
+body::after{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.3;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* ── BLOB ────────────────────────────────────────────────── */
+.blob{position:absolute;border-radius:50%;filter:blur(110px);pointer-events:none;opacity:.15;}
+
+/* ── GRADIENT TEXT ───────────────────────────────────────── */
+.grad{
+  background:linear-gradient(135deg,#c4b5fd 0%,#818cf8 45%,#06b6d4 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+
+/* ── GLASS ───────────────────────────────────────────────── */
+.glass{
+  background:rgba(20,14,40,.55);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border:1px solid var(--border);border-radius:16px;
+}
+
+/* ── BUTTONS ─────────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 26px;border-radius:12px;border:none;cursor:pointer;
+  font-family:'Syne',sans-serif;font-weight:700;font-size:.875rem;
+  transition:transform .2s,box-shadow .2s,background .2s;
+  white-space:nowrap;text-decoration:none;
+}
+.btn-p{
+  background:linear-gradient(135deg,var(--brand),#4f46e5);
+  color:#fff;box-shadow:0 6px 28px rgba(124,58,237,.32);
+}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(124,58,237,.48);}
+.btn-p:active{transform:translateY(0);}
+.btn-g{
+  background:rgba(124,58,237,.1);
+  border:1px solid rgba(124,58,237,.3)!important;
+  color:#c4b5fd;
+}
+.btn-g:hover{background:rgba(124,58,237,.2);border-color:rgba(124,58,237,.55)!important;color:#fff;}
+
+/* ── NAV LINK ────────────────────────────────────────────── */
+.nav-a{
+  font-size:.875rem;font-weight:500;color:var(--txt2);
+  transition:color .2s;position:relative;
+}
+.nav-a::after{
+  content:'';position:absolute;bottom:-4px;left:0;right:0;
+  height:2px;background:var(--brand-l);border-radius:2px;
+  transform:scaleX(0);transform-origin:left;transition:transform .22s;
+}
+.nav-a:hover{color:#fff;}
+.nav-a:hover::after{transform:scaleX(1);}
+
+/* ── SECTION LABEL ───────────────────────────────────────── */
+.slabel{
+  display:flex;align-items:center;gap:8px;
+  font-size:.68rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--brand-l);margin-bottom:12px;
+}
+.slabel::before{
+  content:'';flex:0 0 24px;height:2px;
+  background:linear-gradient(90deg,var(--brand),transparent);border-radius:2px;
+}
+
+/* ── CARDS ───────────────────────────────────────────────── */
+.card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:24px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+  position:relative;overflow:hidden;
+}
+.card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(124,58,237,.07),transparent);
+  opacity:0;transition:opacity .3s;pointer-events:none;
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(124,58,237,.4);box-shadow:0 14px 44px rgba(124,58,237,.16);}
+.card:hover::before{opacity:1;}
+.card.sel{border-color:var(--brand);box-shadow:0 0 0 2px rgba(124,58,237,.28),0 14px 40px rgba(124,58,237,.18);}
+
+/* ── BADGE ───────────────────────────────────────────────── */
+.badge{
+  display:inline-block;padding:3px 10px;border-radius:999px;
+  font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+}
+
+/* ── TAB BUTTONS ─────────────────────────────────────────── */
+.tab{
+  padding:8px 16px;border-radius:999px;
+  font-family:'Syne',sans-serif;font-size:.78rem;font-weight:600;
+  white-space:nowrap;cursor:pointer;flex-shrink:0;
+  border:1px solid rgba(124,58,237,.22);
+  background:rgba(20,14,40,.5);color:var(--txt3);
+  transition:all .2s;
+}
+.tab:hover{color:#fff;border-color:rgba(124,58,237,.5);}
+.tab.on{
+  background:linear-gradient(135deg,var(--brand),#4f46e5);
+  color:#fff;border-color:transparent;
+  box-shadow:0 4px 16px rgba(124,58,237,.32);
+}
+
+/* ── INPUT ───────────────────────────────────────────────── */
+.inp{
+  width:100%;padding:12px 15px;border-radius:10px;
+  background:rgba(124,58,237,.07);border:1px solid rgba(124,58,237,.22);
+  color:var(--txt);font-family:'DM Sans',sans-serif;font-size:.9rem;
+  transition:border-color .2s;outline:none;
+  -webkit-appearance:none;appearance:none;
+}
+.inp:focus{border-color:var(--brand);}
+.inp::placeholder{color:var(--txt3);}
+textarea.inp{resize:vertical;min-height:108px;}
+select.inp option{background:#1a1040;color:var(--txt);}
+
+/* ── CART PANEL ──────────────────────────────────────────── */
+#cart-panel{
+  position:fixed;right:0;top:0;bottom:0;transform:translateX(100%);
+  width:420px;max-width:100vw;
+  background:var(--bg2);border-left:1px solid var(--border);
+  z-index:600;transition:right .34s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;
+}
+#cart-panel.open{right:0;transform:translateX(0);}
+#cart-ov{
+  position:fixed;inset:0;background:rgba(0,0,0,.55);
+  z-index:599;opacity:0;pointer-events:none;transition:opacity .3s;
+}
+#cart-ov.on{opacity:1;pointer-events:all;}
+
+/* ── CART BADGE ──────────────────────────────────────────── */
+#cbadge{
+  position:absolute;top:-7px;right:-7px;
+  width:19px;height:19px;border-radius:50%;
+  background:#ef4444;color:#fff;
+  font-size:.62rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transform:scale(.4);transition:opacity .2s,transform .2s;
+}
+#cbadge.on{opacity:1;transform:scale(1);}
+
+/* ── TOAST ───────────────────────────────────────────────── */
+#toast{
+  position:fixed;bottom:24px;left:50%;
+  transform:translateX(-50%) translateY(70px);
+  background:linear-gradient(135deg,#1c1144,#0d0820);
+  border:1px solid var(--border);border-radius:12px;
+  padding:13px 22px;z-index:9000;
+  font-size:.85rem;font-weight:500;color:#d4d0f0;
+  transition:transform .32s cubic-bezier(.4,0,.2,1);
+  white-space:nowrap;box-shadow:0 12px 44px rgba(0,0,0,.5);
+  max-width:90vw;text-align:center;
+}
+#toast.on{transform:translateX(-50%) translateY(0);}
+
+/* ── FAQ ─────────────────────────────────────────────────── */
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;
+  padding:17px 0;background:none;border:none;
+  color:var(--txt);font-family:'Syne',sans-serif;font-weight:600;
+  font-size:.92rem;cursor:pointer;text-align:left;gap:14px;
+}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .34s ease,padding .34s ease;}
+.faq-a.open{max-height:260px;padding-bottom:16px;}
+.faq-ico{transition:transform .3s;flex-shrink:0;color:var(--brand-l);}
+.faq-ico.open{transform:rotate(45deg);}
+
+/* ── STARS ───────────────────────────────────────────────── */
+.stars{color:#f59e0b;letter-spacing:2px;}
+
+/* ── WA FLOAT ────────────────────────────────────────────── */
+#wa{
+  position:fixed;bottom:26px;right:26px;z-index:500;
+  width:54px;height:54px;border-radius:50%;
+  background:linear-gradient(135deg,#25d366,#128c7e);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 22px rgba(37,211,102,.42);
+  transition:transform .2s,box-shadow .2s;
+}
+#wa:hover{transform:scale(1.1);box-shadow:0 10px 30px rgba(37,211,102,.55);}
+
+/* ── PING DOT ────────────────────────────────────────────── */
+.ping{
+  display:inline-block;width:8px;height:8px;border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 0 0 rgba(16,185,129,.5);
+  animation:pingA 1.6s ease-in-out infinite;
+}
+@keyframes pingA{
+  0%{box-shadow:0 0 0 0 rgba(16,185,129,.5);}
+  70%{box-shadow:0 0 0 9px rgba(16,185,129,0);}
+  100%{box-shadow:0 0 0 0 rgba(16,185,129,0);}
+}
+
+/* ── MOBILE MENU ─────────────────────────────────────────── */
+#mob-menu{
+  max-height:0;overflow:hidden;
+  transition:max-height .34s cubic-bezier(.4,0,.2,1);
+  background:var(--bg2);border-bottom:1px solid var(--border);
+}
+#mob-menu.open{max-height:420px;}
+
+/* ── ANIMATIONS ──────────────────────────────────────────── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+.au{animation:fadeUp .6s ease both;}
+.au1{animation:fadeUp .6s .1s ease both;}
+.au2{animation:fadeUp .6s .2s ease both;}
+.au3{animation:fadeUp .6s .3s ease both;}
+
+/* ── PROCESS STEP ────────────────────────────────────────── */
+.step-num{
+  width:48px;height:48px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--brand),#4f46e5);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:#fff;
+  box-shadow:0 4px 18px rgba(124,58,237,.38);
+}
+
+/* ── TRUST BAR ───────────────────────────────────────────── */
+.trust-item{
+  display:flex;align-items:center;gap:8px;
+  font-size:.8rem;font-weight:600;color:var(--txt2);
+}
+.trust-item svg{flex-shrink:0;color:var(--green);}
+
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media(max-width:900px){
+  .hide-md{display:none!important;}
+  .show-md{display:flex!important;}
+  .grid-1-md{grid-template-columns:1fr!important;}
+  .grid-2-md{grid-template-columns:1fr 1fr!important;}
+  #cart-panel{width:100vw;right:-100vw;}
+}
+@media(max-width:600px){
+  .hide-sm{display:none!important;}
+  .grid-1-sm{grid-template-columns:1fr!important;}
+  .stats-grid{grid-template-columns:1fr 1fr!important;}
+}
+
+.show-md{display:none;}
+.btn,a.btn{display:inline-flex;align-items:center;justify-content:center;}
+select.inp,select.inp option{background:#140e28;color:#e2e0f0;}
+@media(max-width:420px){
+  .stats-grid{grid-template-columns:1fr!important;}
+}
+
+</style>
+</head>
+<body>
+
+<!-- WA FLOAT -->
+<a id="wa" href="https://wa.me/919204520892?text=Hi%20Infinity%20Media%20Works!%20I%27m%20interested%20in%20your%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<!-- CART OVERLAY -->
+<div id="cart-ov" onclick="closeCart()"></div>
+
+<!-- CART PANEL -->
+<div id="cart-panel">
+  <div style="padding:22px 22px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;">
+    <div>
+      <h3 style="font-size:1.05rem;font-weight:700;">Your Project Cart</h3>
+      <p style="font-size:.76rem;color:var(--txt3);margin-top:2px;">Review &amp; send quote to WhatsApp</p>
+    </div>
+    <button onclick="closeCart()" style="background:rgba(124,58,237,.14);border:1px solid var(--border);border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--brand-l);transition:background .2s;" onmouseover="this.style.background='rgba(124,58,237,.28)'" onmouseout="this.style.background='rgba(124,58,237,.14)'">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div id="cart-items" style="flex:1;overflow-y:auto;padding:18px;"></div>
+  <div style="padding:18px;border-top:1px solid var(--border);flex-shrink:0;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+      <span style="font-size:.83rem;color:var(--txt2);">Estimated Total</span>
+      <span id="cart-total" style="font-family:'Syne',sans-serif;font-size:1.35rem;font-weight:800;" class="grad">$0</span>
+    </div>
+    <p style="font-size:.7rem;color:var(--txt3);margin-bottom:14px;">* Final pricing confirmed after free consultation. GST may apply.</p>
+    <button onclick="sendCartWA()" class="btn btn-p" style="width:100%;margin-bottom:10px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Send Quote on WhatsApp
+    </button>
+    <button onclick="clearCart()" style="width:100%;background:none;border:1px solid rgba(239,68,68,.22);border-radius:10px;padding:9px;color:#f87171;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s;" onmouseover="this.style.background='rgba(239,68,68,.1)'" onmouseout="this.style.background='none'">Clear All</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- TOP BAR -->
+<div style="background:linear-gradient(90deg,#0d0820,#120d2a,#0d0820);border-bottom:1px solid rgba(124,58,237,.12);padding:8px 16px;text-align:center;font-size:.73rem;color:#a78bfa;font-weight:600;letter-spacing:.04em;">
+  🌍 &nbsp;Serving Clients Worldwide &nbsp;•&nbsp; Professional Quality &nbsp;•&nbsp; Fast Turnaround &nbsp;•&nbsp; 100% Satisfaction Guaranteed
+</div>
+
+<!-- HEADER -->
+<header style="position:sticky;top:0;z-index:300;background:rgba(6,4,15,.9);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(124,58,237,.1);">
+  <div style="max-width:1280px;margin:0 auto;padding:0 20px;height:68px;display:flex;align-items:center;justify-content:space-between;">
+
+    <!-- Logo -->
+    <a href="#" style="display:flex;align-items:center;gap:11px;">
+      <div style="width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--brand),#4f46e5);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(124,58,237,.38);flex-shrink:0;">
+        <svg width="20" height="20" fill="none" stroke="white" stroke-width="2.3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+      </div>
+      <div>
+        <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem;letter-spacing:.05em;background:linear-gradient(135deg,#fff,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;">INFINITY MEDIA WORKS</div>
+        <div style="font-size:.58rem;letter-spacing:.18em;color:#6b5fa8;font-weight:700;text-transform:uppercase;margin-top:1px;">Creative &amp; Tech Solutions</div>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hide-md" style="display:flex;align-items:center;gap:28px;">
+      <a href="#about" class="nav-a">About</a>
+      <a href="#services" class="nav-a">Services</a>
+      <a href="#calculator" class="nav-a" style="display:flex;align-items:center;gap:6px;"><span class="ping"></span>Quote Calculator</a>
+      <a href="#process" class="nav-a">How It Works</a>
+      <a href="#testimonials" class="nav-a">Reviews</a>
+      <a href="#worldwide" class="nav-a">Global</a>
+      <a href="#faq" class="nav-a">FAQ</a>
+    </nav>
+
+    <!-- Right -->
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button onclick="openCart()" style="position:relative;background:rgba(124,58,237,.13);border:1px solid rgba(124,58,237,.28);border-radius:10px;padding:9px 13px;cursor:pointer;display:flex;align-items:center;gap:7px;color:var(--brand-l);font-family:'Syne',sans-serif;font-size:.78rem;font-weight:600;transition:all .2s;" onmouseover="this.style.background='rgba(124,58,237,.25)'" onmouseout="this.style.background='rgba(124,58,237,.13)'">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        <span class="hide-md" style="display:inline;">Cart</span>
+        <div id="cbadge">0</div>
+      </button>
+      <a href="#contact" class="btn btn-p hide-md" style="padding:9px 18px;font-size:.8rem;">Inquire Now</a>
+      <!-- Hamburger -->
+      <button id="ham" onclick="toggleMob()" class="show-md" style="display:none;background:none;border:none;cursor:pointer;color:var(--brand-l);padding:4px 2px;">
+        <svg id="ham-ico" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mob-menu">
+    <div style="padding:14px 20px 18px;display:flex;flex-direction:column;gap:2px;">
+      <a href="#about"        onclick="closeMob()" style="padding:11px 0;color:var(--brand-l);font-weight:500;border-bottom:1px solid rgba(124,58,237,.08);">About</a>
+      <a href="#services"     onclick="closeMob()" style="padding:11px 0;color:var(--brand-l);font-weight:500;border-bottom:1px solid rgba(124,58,237,.08);">Services</a>
+      <a href="#calculator"   onclick="closeMob()" style="padding:11px 0;color:#10b981;font-weight:500;border-bottom:1px solid rgba(124,58,237,.08);">📊 Quote Calculator</a>
+      <a href="#process"      onclick="closeMob()" style="padding:11px 0;color:var(--brand-l);font-weight:500;border-bottom:1px solid rgba(124,58,237,.08);">How It Works</a>
+      <a href="#testimonials" onclick="closeMob()" style="padding:11px 0;color:var(--brand-l);font-weight:500;border-bottom:1px solid rgba(124,58,237,.08);">Reviews</a>
+      <a href="#worldwide"    onclick="closeMob()" style="padding:11px 0;color:var(--brand-l);font-weight:500;border-bottom:1px solid rgba(124,58,237,.08);">🌍 Global</a>
+      <a href="#faq"          onclick="closeMob()" style="padding:11px 0;color:var(--brand-l);font-weight:500;border-bottom:1px solid rgba(124,58,237,.08);">FAQ</a>
+      <a href="#contact"      onclick="closeMob()" class="btn btn-p" style="margin-top:12px;width:100%;">Inquire Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════ HERO ═══════════════════════════ -->
+<section style="position:relative;overflow:hidden;padding:76px 20px 96px;">
+  <div class="blob" style="width:580px;height:580px;background:radial-gradient(circle,#7c3aed,transparent);top:-120px;left:50%;transform:translateX(-50%);"></div>
+  <div class="blob" style="width:280px;height:280px;background:radial-gradient(circle,#06b6d4,transparent);bottom:0;right:8%;"></div>
+
+  <div style="max-width:860px;margin:0 auto;text-align:center;position:relative;z-index:1;">
+    <div class="au" style="display:inline-flex;align-items:center;gap:7px;padding:7px 16px;border-radius:999px;background:rgba(124,58,237,.11);border:1px solid rgba(124,58,237,.28);font-size:.72rem;font-weight:700;color:#a78bfa;letter-spacing:.05em;text-transform:uppercase;margin-bottom:26px;">
+      🚀 Leading Your Business to Digital Success
+    </div>
+
+    <h1 class="au1" style="font-size:clamp(2.2rem,6vw,4.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:22px;">
+      Complete Digital Growth,<br/>
+      <span class="grad">Creative &amp; Tech Solutions</span>
+    </h1>
+
+    <p class="au2" style="font-size:clamp(.92rem,2.4vw,1.1rem);color:var(--txt2);max-width:620px;margin:0 auto 36px;line-height:1.75;">
+      Helping businesses grow, automate, and succeed in the digital world — with professional web design, creative content, marketing, and automation setups built for global brands.
+    </p>
+
+    <!-- Trust badges -->
+    <div class="au2" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:36px;">
+      <div class="trust-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 100% Satisfaction Guarantee</div>
+      <div class="trust-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> Free Revisions Included</div>
+      <div class="trust-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> No Hidden Charges</div>
+      <div class="trust-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 3–7 Day Delivery</div>
+    </div>
+
+    <div class="au3" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+      <a href="#services" class="btn btn-p">Explore Services</a>
+      <a href="#calculator" class="btn btn-g">📊 Quote Calculator</a>
+    </div>
+
+    <!-- Stats grid -->
+    <div class="au3 stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(124,58,237,.14);border-radius:16px;overflow:hidden;margin-top:56px;border:1px solid rgba(124,58,237,.14);">
+      <div style="padding:22px 10px;text-align:center;background:var(--bg2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.7rem;font-weight:800;" class="grad">$7+</div>
+        <div style="font-size:.7rem;color:var(--txt3);margin-top:4px;">Starting Price</div>
+      </div>
+      <div style="padding:22px 10px;text-align:center;background:var(--bg2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.7rem;font-weight:800;" class="grad">100%</div>
+        <div style="font-size:.7rem;color:var(--txt3);margin-top:4px;">Mobile Responsive</div>
+      </div>
+      <div style="padding:22px 10px;text-align:center;background:var(--bg2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.7rem;font-weight:800;" class="grad">3–7</div>
+        <div style="font-size:.7rem;color:var(--txt3);margin-top:4px;">Days Delivery</div>
+      </div>
+      <div style="padding:22px 10px;text-align:center;background:var(--bg2);">
+        <div style="font-family:'Syne',sans-serif;font-size:1.7rem;font-weight:800;" class="grad">24/7</div>
+        <div style="font-size:.7rem;color:var(--txt3);margin-top:4px;">Support Available</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ ABOUT ══════════════════════════ -->
+<section id="about" style="padding:76px 20px;background:var(--bg2);position:relative;overflow:hidden;">
+  <div class="blob" style="width:360px;height:360px;background:radial-gradient(circle,#4c1d95,transparent);bottom:-80px;right:-80px;"></div>
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;" class="grid-1-md">
+    <div>
+      <div class="slabel">Who We Are</div>
+      <h2 style="font-size:clamp(1.7rem,3.8vw,2.7rem);font-weight:800;margin-bottom:18px;">
+        Empowering Startups, Clinics,<br/>Stores &amp; <span class="grad">Professionals</span>
+      </h2>
+      <p style="color:#8d8aab;line-height:1.78;margin-bottom:14px;font-size:.93rem;">
+        At <strong style="color:#c4b5fd;">Infinity Media Works</strong>, we believe every modern brand deserves a standout digital presence. We serve pharmacies, clinics, local stores, coaches, educational centers, and content creators with specialized packages.
+      </p>
+      <p style="color:#8d8aab;line-height:1.78;margin-bottom:28px;font-size:.93rem;">
+        Whether you need a high-converting landing page, a mobile app, automation tools, or full-funnel lead generation — we design every strategy to drive real, tangible results for your business.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;">
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 14px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-radius:8px;font-size:.78rem;font-weight:600;color:#34d399;">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          Verified Business
+        </div>
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 14px;background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.2);border-radius:8px;font-size:.78rem;font-weight:600;color:var(--brand-l);">
+          🌐 Worldwide Service
+        </div>
+        <div style="display:flex;align-items:center;gap:7px;padding:8px 14px;background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.2);border-radius:8px;font-size:.78rem;font-weight:600;color:#fbbf24;">
+          ⚡ Fast Turnaround
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div class="card" style="cursor:default;"><div style="font-size:1.4rem;margin-bottom:10px;">⚡</div><h3 style="font-size:.9rem;font-weight:700;margin-bottom:6px;">Automate Tasks</h3><p style="font-size:.76rem;color:var(--txt3);line-height:1.6;">Save hours with booking links, automated catalog responses, and lead trackers.</p></div>
+      <div class="card" style="cursor:default;"><div style="font-size:1.4rem;margin-bottom:10px;">🛡️</div><h3 style="font-size:.9rem;font-weight:700;margin-bottom:6px;">Credibility Setup</h3><p style="font-size:.76rem;color:var(--txt3);line-height:1.6;">Optimized Google profiles, maps visibility, and verified contact funnels.</p></div>
+      <div class="card" style="cursor:default;"><div style="font-size:1.4rem;margin-bottom:10px;">🎨</div><h3 style="font-size:.9rem;font-weight:700;margin-bottom:6px;">Creative Brilliance</h3><p style="font-size:.76rem;color:var(--txt3);line-height:1.6;">Stunning posters, responsive layouts, video assets, and photo restorations.</p></div>
+      <div class="card" style="cursor:default;"><div style="font-size:1.4rem;margin-bottom:10px;">💰</div><h3 style="font-size:.9rem;font-weight:700;margin-bottom:6px;">Cost Effective</h3><p style="font-size:.76rem;color:var(--txt3);line-height:1.6;">Competitive pricing starting from $7 — built for startups, small businesses, and personal brands worldwide.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+<section id="services" style="padding:76px 20px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;max-width:580px;margin:0 auto 44px;">
+      <div class="slabel" style="justify-content:center;">Explore Services</div>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;margin-bottom:10px;">A Universe of Digital <span class="grad">Offerings</span></h2>
+      <p style="color:#8d8aab;font-size:.88rem;">Filter by category. Click any card to add it to your cart and get an instant price estimate.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div style="display:flex;gap:7px;overflow-x:auto;padding-bottom:10px;margin-bottom:32px;scrollbar-width:none;-ms-overflow-style:none;">
+      <button class="tab on" onclick="filterSvc('all',this)">All Services</button>
+      <button class="tab"    onclick="filterSvc('web',this)">🌐 Web &amp; Digital</button>
+      <button class="tab"    onclick="filterSvc('app',this)">📱 Mobile Apps</button>
+      <button class="tab"    onclick="filterSvc('marketing',this)">📣 Marketing</button>
+      <button class="tab"    onclick="filterSvc('design',this)">🎨 Graphic Design</button>
+      <button class="tab"    onclick="filterSvc('media',this)">🎬 Video &amp; Photo</button>
+      <button class="tab"    onclick="filterSvc('automation',this)">🤖 Automation</button>
+    </div>
+
+    <div id="svc-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CALCULATOR ═════════════════════ -->
+<section id="calculator" style="padding:76px 20px;background:var(--bg2);position:relative;overflow:hidden;">
+  <div class="blob" style="width:460px;height:460px;background:radial-gradient(circle,#164e63,transparent);top:-60px;left:-120px;"></div>
+  <div style="max-width:1060px;margin:0 auto;">
+    <div style="text-align:center;max-width:580px;margin:0 auto 50px;">
+      <div class="slabel" style="justify-content:center;"><span class="ping" style="margin-right:4px;"></span>Live Instant Estimator</div>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;margin-bottom:10px;">Plan Your Custom <span class="grad">Package</span></h2>
+      <p style="color:#8d8aab;font-size:.88rem;">Select services from the grid above or use quick-add below. Your total updates in real time. No hidden costs.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;" class="grid-1-md" id="calc-layout">
+      <div>
+        <h3 style="font-size:.95rem;font-weight:700;color:var(--brand-l);margin-bottom:18px;">⚡ Quick-Add Popular Services</h3>
+        <div id="quick-add" style="display:grid;grid-template-columns:1fr 1fr;gap:9px;" class="grid-1-sm"></div>
+      </div>
+      <div class="glass" style="padding:26px;position:sticky;top:80px;">
+        <h3 style="font-weight:700;margin-bottom:18px;font-size:1rem;">Your Estimate</h3>
+        <div id="sum-list" style="min-height:72px;margin-bottom:18px;">
+          <p style="font-size:.8rem;color:var(--txt3);text-align:center;padding:18px 0;">No services selected yet.<br/>Click any card above to start.</p>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:14px;margin-bottom:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:.83rem;color:var(--txt2);">Subtotal</span>
+            <span id="sum-total" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;" class="grad">$0</span>
+          </div>
+          <p style="font-size:.68rem;color:var(--txt3);margin-top:5px;">* Indicative price. Final quote after free call.</p>
+        </div>
+        <button onclick="openCart()" class="btn btn-p" style="width:100%;margin-bottom:9px;">🛒 Review Full Cart</button>
+        <a href="#contact" class="btn btn-g" style="width:100%;display:flex;">Get Official Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ HOW IT WORKS ═══════════════════ -->
+<section id="process" style="padding:76px 20px;">
+  <div style="max-width:900px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:52px;">
+      <div class="slabel" style="justify-content:center;">Simple Process</div>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;">How We Work — <span class="grad">4 Easy Steps</span></h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0;">
+      <div style="display:flex;gap:22px;align-items:start;padding-bottom:32px;position:relative;">
+        <div style="position:absolute;left:23px;top:50px;bottom:0;width:2px;background:linear-gradient(180deg,var(--brand),transparent);"></div>
+        <div class="step-num">1</div>
+        <div class="card" style="flex:1;cursor:default;">
+          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:6px;">📞 Share Your Requirements</h3>
+          <p style="font-size:.8rem;color:var(--txt3);line-height:1.65;">Tell us what you need via the inquiry form or WhatsApp. No technical knowledge required — just describe your business goals.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:22px;align-items:start;padding-bottom:32px;position:relative;">
+        <div style="position:absolute;left:23px;top:50px;bottom:0;width:2px;background:linear-gradient(180deg,var(--brand),transparent);"></div>
+        <div class="step-num">2</div>
+        <div class="card" style="flex:1;cursor:default;">
+          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:6px;">💬 Free Consultation Call</h3>
+          <p style="font-size:.8rem;color:var(--txt3);line-height:1.65;">We'll have a quick 15–20 minute call (WhatsApp or phone) to understand exactly what you need and confirm a transparent quote — no surprises.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:22px;align-items:start;padding-bottom:32px;position:relative;">
+        <div style="position:absolute;left:23px;top:50px;bottom:0;width:2px;background:linear-gradient(180deg,var(--brand),transparent);"></div>
+        <div class="step-num">3</div>
+        <div class="card" style="flex:1;cursor:default;">
+          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:6px;">🛠️ We Build &amp; Deliver</h3>
+          <p style="font-size:.8rem;color:var(--txt3);line-height:1.65;">Our team gets to work immediately. Most projects are delivered within 3–7 working days. You'll receive regular progress updates via WhatsApp.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:22px;align-items:start;">
+        <div class="step-num">4</div>
+        <div class="card" style="flex:1;cursor:default;">
+          <h3 style="font-size:.95rem;font-weight:700;margin-bottom:6px;">✅ Review, Revise &amp; Launch</h3>
+          <p style="font-size:.8rem;color:var(--txt3);line-height:1.65;">You review the deliverable. We revise until you're 100% happy, then hand over all files. Full ownership — yours forever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ TESTIMONIALS ═══════════════════ -->
+<section id="testimonials" style="padding:76px 20px;background:var(--bg2);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;max-width:540px;margin:0 auto 44px;">
+      <div class="slabel" style="justify-content:center;">Client Stories</div>
+      <h2 style="font-size:clamp(1.7rem,3.8vw,2.7rem);font-weight:800;">Loved by Businesses <span class="grad">Around the World</span></h2>
+    </div>
+    <div id="tgrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px;"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════ WHY CHOOSE ══════════════════════ -->
+<section id="why-choose" style="padding:76px 20px;position:relative;overflow:hidden;">
+  <div class="blob" style="width:380px;height:380px;background:radial-gradient(circle,#7c3aed,transparent);right:-80px;top:50%;transform:translateY(-50%);"></div>
+  <div style="max-width:1060px;margin:0 auto;">
+    <div style="text-align:center;max-width:540px;margin:0 auto 48px;">
+      <div class="slabel" style="justify-content:center;">Why Choose Us</div>
+      <h2 style="font-size:clamp(1.7rem,3.8vw,2.7rem);font-weight:800;">Built Different, <span class="grad">Priced Right</span></h2>
+    </div>
+    <div id="why-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════ WORLDWIDE SERVICE ══════════════ -->
+<section id="worldwide" style="padding:76px 20px;background:var(--bg2);position:relative;overflow:hidden;">
+  <div class="blob" style="width:500px;height:500px;background:radial-gradient(circle,#4c1d95,transparent);left:-120px;top:50%;transform:translateY(-50%);opacity:.18;"></div>
+  <div class="blob" style="width:400px;height:400px;background:radial-gradient(circle,#06b6d4,transparent);right:-100px;bottom:-60px;opacity:.12;"></div>
+  <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1;">
+
+    <!-- Heading -->
+    <div style="text-align:center;max-width:620px;margin:0 auto 56px;">
+      <div class="slabel" style="justify-content:center;">Global Reach</div>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.9rem);font-weight:800;margin-bottom:16px;">
+        We Work With Clients <span class="grad">Everywhere on Earth</span>
+      </h2>
+      <p style="color:#8d8aab;font-size:.97rem;line-height:1.75;">
+        Fully remote, async-friendly, and timezone-flexible — Infinity Media Works delivers professional digital solutions to businesses across every continent. No matter where you are, we've got you covered.
+      </p>
+    </div>
+
+    <!-- Globe + stats strip -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(124,58,237,.14);border-radius:20px;overflow:hidden;border:1px solid rgba(124,58,237,.18);margin-bottom:56px;" class="stats-grid">
+      <div style="padding:26px 16px;text-align:center;background:var(--card);">
+        <div style="font-size:2rem;margin-bottom:6px;">🌍</div>
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;" class="grad">6</div>
+        <div style="font-size:.72rem;color:var(--txt3);margin-top:4px;">Continents Served</div>
+      </div>
+      <div style="padding:26px 16px;text-align:center;background:var(--card);">
+        <div style="font-size:2rem;margin-bottom:6px;">🕐</div>
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;" class="grad">24h</div>
+        <div style="font-size:.72rem;color:var(--txt3);margin-top:4px;">Async Turnaround</div>
+      </div>
+      <div style="padding:26px 16px;text-align:center;background:var(--card);">
+        <div style="font-size:2rem;margin-bottom:6px;">💬</div>
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;" class="grad">5+</div>
+        <div style="font-size:.72rem;color:var(--txt3);margin-top:4px;">Languages Supported</div>
+      </div>
+      <div style="padding:26px 16px;text-align:center;background:var(--card);">
+        <div style="font-size:2rem;margin-bottom:6px;">🤖</div>
+        <div style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;" class="grad">AI</div>
+        <div style="font-size:.72rem;color:var(--txt3);margin-top:4px;">Powered Workflows</div>
+      </div>
+    </div>
+
+    <!-- Feature cards -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;" class="grid-1-md">
+
+      <div class="card" style="cursor:default;padding:28px;">
+        <div style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(124,58,237,.22),rgba(79,70,229,.22));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;border:1px solid rgba(124,58,237,.25);">🌐</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">100% Remote Delivery</h3>
+        <p style="font-size:.8rem;color:var(--txt3);line-height:1.7;">Every project is managed and delivered fully online. Share your brief, collaborate over email or chat, and receive polished deliverables — no physical meetings needed.</p>
+      </div>
+
+      <div class="card" style="cursor:default;padding:28px;">
+        <div style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(6,182,212,.18),rgba(16,185,129,.18));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;border:1px solid rgba(6,182,212,.22);">🤖</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">AI-Powered Workflows</h3>
+        <p style="font-size:.8rem;color:var(--txt3);line-height:1.7;">We leverage cutting-edge AI tools for faster content creation, smarter automation, and higher-quality design — giving you more value at a lower cost than traditional agencies.</p>
+      </div>
+
+      <div class="card" style="cursor:default;padding:28px;">
+        <div style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(245,158,11,.18),rgba(251,191,36,.1));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;border:1px solid rgba(245,158,11,.22);">🕐</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Timezone-Flexible</h3>
+        <p style="font-size:.8rem;color:var(--txt3);line-height:1.7;">Whether you're in New York, London, Dubai, or Sydney — we align our communication to your schedule. Async updates keep projects moving even when you're offline.</p>
+      </div>
+
+      <div class="card" style="cursor:default;padding:28px;">
+        <div style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(124,58,237,.22),rgba(167,139,250,.14));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;border:1px solid rgba(124,58,237,.25);">💳</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Flexible Payment Methods</h3>
+        <p style="font-size:.8rem;color:var(--txt3);line-height:1.7;"><strong style="color:#a78bfa;">🇮🇳 Indian clients:</strong> Bank Transfer &amp; UPI accepted.<br/><strong style="color:#22d3ee;">🌍 International clients:</strong> PayPal &amp; major cryptocurrencies (BTC, ETH, USDT) accepted — secure, borderless, and fast.</p>
+      </div>
+
+      <div class="card" style="cursor:default;padding:28px;">
+        <div style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(16,185,129,.18),rgba(52,211,153,.1));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;border:1px solid rgba(16,185,129,.22);">📦</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Full Asset Handover</h3>
+        <p style="font-size:.8rem;color:var(--txt3);line-height:1.7;">All source files, code repositories, design assets, and licenses are handed over to you upon project completion. You own everything — no lock-ins, no subscriptions unless you choose them.</p>
+      </div>
+
+      <div class="card" style="cursor:default;padding:28px;">
+        <div style="width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(6,182,212,.18),rgba(99,102,241,.14));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;border:1px solid rgba(6,182,212,.22);">🔁</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:8px;">Ongoing Global Support</h3>
+        <p style="font-size:.8rem;color:var(--txt3);line-height:1.7;">Post-delivery support, updates, and maintenance are available for all clients worldwide. Build a long-term partnership and grow your digital presence with a team that's always in your corner.</p>
+      </div>
+
+    </div>
+
+    <!-- CTA banner -->
+    <div style="margin-top:48px;padding:36px 40px;border-radius:20px;background:linear-gradient(135deg,rgba(124,58,237,.18),rgba(6,182,212,.1));border:1px solid rgba(124,58,237,.28);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+      <div>
+        <h3 style="font-size:1.25rem;font-weight:800;margin-bottom:6px;">Ready to grow your brand globally?</h3>
+        <p style="color:#8d8aab;font-size:.88rem;">Join businesses from around the world who trust Infinity Media Works.</p>
+      </div>
+      <a href="#contact" class="btn btn-p" style="flex-shrink:0;">🚀 Start Your Project</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════ FAQ ═════════════════════════ -->
+<section id="faq" style="padding:76px 20px;background:var(--bg2);">
+  <div style="max-width:760px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:44px;">
+      <div class="slabel" style="justify-content:center;">Common Questions</div>
+      <h2 style="font-size:clamp(1.7rem,3.8vw,2.7rem);font-weight:800;">Frequently <span class="grad">Asked</span></h2>
+    </div>
+    <div id="faq-list" style="border-top:1px solid var(--border);"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════ CONTACT ══════════════════════ -->
+<section id="contact" style="padding:76px 20px;position:relative;overflow:hidden;">
+  <div class="blob" style="width:480px;height:480px;background:radial-gradient(circle,#7c3aed,transparent);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+  <div style="max-width:860px;margin:0 auto;position:relative;z-index:1;">
+    <div style="text-align:center;margin-bottom:44px;">
+      <div class="slabel" style="justify-content:center;">Get In Touch</div>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.9rem);font-weight:800;margin-bottom:10px;">Let's Build Something <span class="grad">Amazing</span></h2>
+      <p style="color:#8d8aab;font-size:.88rem;">Fill in the form or reach us on WhatsApp. We respond within 2–4 hours, Mon–Sat (available across timezones).</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:36px;align-items:start;" class="grid-1-md">
+      <!-- Contact info -->
+      <div>
+        <h3 style="font-size:.95rem;font-weight:700;color:var(--brand-l);margin-bottom:14px;">Contact Channels</h3>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;">
+          <a href="https://wa.me/919204520892" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;padding:14px;background:rgba(37,211,102,.07);border:1px solid rgba(37,211,102,.18);border-radius:12px;transition:all .2s;" onmouseover="this.style.background='rgba(37,211,102,.14)'" onmouseout="this.style.background='rgba(37,211,102,.07)'">
+            <div style="width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#25d366,#128c7e);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div><div style="font-weight:600;font-size:.83rem;color:var(--txt);">WhatsApp</div><div style="font-size:.73rem;color:var(--txt3);margin-top:1px;">+91 92045 20892</div></div>
+          </a>
+          <a href="mailto:prince.infimw@proton.me" style="display:flex;align-items:center;gap:12px;padding:14px;background:rgba(124,58,237,.07);border:1px solid rgba(124,58,237,.18);border-radius:12px;transition:all .2s;" onmouseover="this.style.background='rgba(124,58,237,.14)'" onmouseout="this.style.background='rgba(124,58,237,.07)'">
+            <div style="width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brand),#4f46e5);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="17" height="17" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div><div style="font-weight:600;font-size:.83rem;color:var(--txt);">Email</div><div style="font-size:.73rem;color:var(--txt3);margin-top:1px;">prince.infimw@proton.me</div></div>
+          </a>
+        </div>
+        <div style="padding:14px;background:rgba(245,158,11,.05);border:1px solid rgba(245,158,11,.18);border-radius:11px;">
+          <div style="font-size:.78rem;color:#fbbf24;font-weight:700;margin-bottom:5px;">⚡ Response Times</div>
+          <div style="font-size:.76rem;color:var(--txt2);line-height:1.6;">WhatsApp: Within 1–2 hrs<br/>Email: Within 4–6 hrs<br/>Mon–Sat, flexible across timezones</div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="glass" style="padding:28px;">
+        <form id="cform" onsubmit="submitForm(event)" novalidate>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;" class="grid-1-sm">
+            <div>
+              <label style="font-size:.75rem;color:var(--txt2);font-weight:600;display:block;margin-bottom:5px;">Your Name *</label>
+              <input class="inp" type="text" id="f-name" placeholder="Rahul Sharma" required/>
+            </div>
+            <div>
+              <label style="font-size:.75rem;color:var(--txt2);font-weight:600;display:block;margin-bottom:5px;">Phone / WhatsApp *</label>
+              <input class="inp" type="tel" id="f-phone" placeholder="+91 98765 XXXXX" required/>
+            </div>
+          </div>
+          <div style="margin-bottom:12px;">
+            <label style="font-size:.75rem;color:var(--txt2);font-weight:600;display:block;margin-bottom:5px;">Email Address</label>
+            <input class="inp" type="email" id="f-email" placeholder="you@example.com"/>
+          </div>
+          <div style="margin-bottom:12px;">
+            <label style="font-size:.75rem;color:var(--txt2);font-weight:600;display:block;margin-bottom:5px;">Business Type</label>
+            <select class="inp" id="f-biz">
+              <option value="">Select your business type...</option>
+              <option>Pharmacy / Medical Store</option>
+              <option>Clinic / Hospital</option>
+              <option>Retail Store / Shop</option>
+              <option>Restaurant / Cafe</option>
+              <option>Coaching / Education</option>
+              <option>Personal Brand / Creator</option>
+              <option>Startup / Tech Company</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div style="margin-bottom:18px;">
+            <label style="font-size:.75rem;color:var(--txt2);font-weight:600;display:block;margin-bottom:5px;">Tell Us About Your Project *</label>
+            <textarea class="inp" id="f-msg" placeholder="Describe what you need — website, marketing, automation, design..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-p" style="width:100%;" id="sbtn">Send Inquiry</button>
+          <p style="font-size:.7rem;color:var(--txt3);margin-top:10px;text-align:center;">🔒 Your information is safe. We never share your data.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════ FOOTER ═══════════════════════ -->
+<footer style="border-top:1px solid rgba(124,58,237,.12);padding:44px 20px 28px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px;" id="footer-grid" class="grid-2-md">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <div style="width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brand),#4f46e5);display:flex;align-items:center;justify-content:center;">
+            <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+          </div>
+          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:.88rem;color:var(--brand-l);">INFINITY MEDIA WORKS</div>
+        </div>
+        <p style="font-size:.78rem;color:var(--txt3);line-height:1.72;max-width:260px;">Your trusted digital growth partner for businesses worldwide. Professional. Affordable. Fast.</p>
+        <div style="display:flex;gap:9px;margin-top:14px;">
+          <a href="https://www.instagram.com/infimw?igsh=dDZqbWd2c2hjZ3py" target="_blank" rel="noopener" title="Instagram" style="width:32px;height:32px;border-radius:7px;background:rgba(124,58,237,.13);border:1px solid rgba(124,58,237,.22);display:flex;align-items:center;justify-content:center;color:var(--brand-l);transition:all .2s;" onmouseover="this.style.background='rgba(124,58,237,.28)'" onmouseout="this.style.background='rgba(124,58,237,.13)'">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.8rem;color:var(--txt);margin-bottom:14px;text-transform:uppercase;letter-spacing:.1em;">Services</h4>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <a href="#services" style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">Web Design</a>
+          <a href="#services" style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">Mobile Apps</a>
+          <a href="#services" style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">Digital Marketing</a>
+          <a href="#services" style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">Graphic Design</a>
+          <a href="#services" style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">Automation</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.8rem;color:var(--txt);margin-bottom:14px;text-transform:uppercase;letter-spacing:.1em;">Company</h4>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <a href="#about"        style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">About Us</a>
+          <a href="#process"      style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">How It Works</a>
+          <a href="#testimonials" style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">Reviews</a>
+          <a href="#faq"          style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">FAQ</a>
+          <a href="#contact"      style="font-size:.78rem;color:var(--txt3);transition:color .2s;" onmouseover="this.style.color='#c4b5fd'" onmouseout="this.style.color='var(--txt3)'">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.8rem;color:var(--txt);margin-bottom:14px;text-transform:uppercase;letter-spacing:.1em;">Global Reach</h4>
+        <p style="font-size:.76rem;color:var(--txt3);line-height:1.72;">Serving clients<br/>across every continent.<br/>🌍 Remote-First Team</p>
+        <div style="margin-top:14px;padding:10px 12px;background:rgba(16,185,129,.07);border:1px solid rgba(16,185,129,.15);border-radius:8px;">
+          <p style="font-size:.72rem;color:#34d399;font-weight:600;">✓ Trusted by businesses<br/>from New York to London</p>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(124,58,237,.1);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+      <p style="font-size:.73rem;color:#3d3860;">© 2025 Infinity Media Works. All rights reserved.</p>
+      <p style="font-size:.73rem;color:#3d3860;">Professional Digital Solutions for Businesses Worldwide 🌍</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════ JS ════════════════════════════ -->
+<script>
+/* ── DATA ──────────────────────────────────────────────── */
+const SVC=[
+  {id:1, cat:'web',        icon:'🌐', name:'Business Landing Page',         desc:'High-converting single page — mobile responsive, fast loading, with contact forms & WhatsApp button.',  price:49,  badge:'Web & Digital',    bc:'rgba(99,102,241,.18)',  bt:'#818cf8'},
+  {id:2, cat:'web',        icon:'🏪', name:'5-Page Business Website',        desc:'Complete website: Home, About, Services, Gallery & Contact. SEO ready and fully responsive.',              price:99, badge:'Web & Digital',    bc:'rgba(99,102,241,.18)',  bt:'#818cf8'},
+  {id:3, cat:'web',        icon:'🛒', name:'E-Commerce Store',               desc:'Full online store with product catalog, cart, global payment integration (PayPal/Stripe/Crypto) and admin panel.',       price:149, badge:'Web & Digital',    bc:'rgba(99,102,241,.18)',  bt:'#818cf8'},
+  {id:4, cat:'web',        icon:'🚀', name:'Conversion Landing Page',         desc:'High-performance landing page with A/B-ready layout, lead capture form, social proof, and clear CTAs.',   price:59,  badge:'Web & Digital',    bc:'rgba(99,102,241,.18)',  bt:'#818cf8'},
+  {id:5, cat:'web',        icon:'📍', name:'Google Business Profile Setup',  desc:'Complete GMB setup with photos, hours, posts, reviews strategy & Google Maps optimization.',              price:24,  badge:'Web & Digital',    bc:'rgba(99,102,241,.18)',  bt:'#818cf8'},
+  {id:6, cat:'web',        icon:'🔗', name:'Link-in-Bio Page',               desc:'Branded one-page link hub for Instagram / social media with all your important links & buttons.',          price:14,  badge:'Web & Digital',    bc:'rgba(99,102,241,.18)',  bt:'#818cf8'},
+  {id:7, cat:'app',        icon:'📱', name:'Android App (Basic)',            desc:'Simple Android app for your business — menu, catalog, contact & about sections. Play Store ready.',       price:149, badge:'Mobile App',       bc:'rgba(16,185,129,.15)', bt:'#34d399'},
+  {id:8, cat:'app',        icon:'🍎', name:'iOS App (Basic)',                desc:'Basic iOS app published to App Store with your branding and core business features.',                      price:199, badge:'Mobile App',       bc:'rgba(16,185,129,.15)', bt:'#34d399'},
+  {id:9, cat:'app',        icon:'📦', name:'Play Store Publishing',          desc:'Submit and publish your Android app to Google Play Store with a proper optimized listing.',                price:19,  badge:'Mobile App',       bc:'rgba(16,185,129,.15)', bt:'#34d399'},
+  {id:10,cat:'app',        icon:'🔔', name:'Push Notification Setup',        desc:'Firebase push notifications for your app — send offers, updates & reminders to all users.',               price:29,  badge:'Mobile App',       bc:'rgba(16,185,129,.15)', bt:'#34d399'},
+  {id:11,cat:'marketing',  icon:'📣', name:'Social Media Management (1 Mo)',desc:'30 days of posts, stories, captions & hashtag strategy for 2 platforms (Insta + FB).',                    price:59, badge:'Marketing',        bc:'rgba(245,158,11,.15)', bt:'#fbbf24'},
+  {id:12,cat:'marketing',  icon:'🎯', name:'Meta Ads Campaign Setup',        desc:'Facebook & Instagram ad campaign — targeting, creatives, A/B testing & conversion tracking.',            price:49, badge:'Marketing',        bc:'rgba(245,158,11,.15)', bt:'#fbbf24'},
+  {id:13,cat:'marketing',  icon:'📧', name:'Email Marketing Setup',          desc:'Email list setup, welcome sequence, newsletter templates & drip automation flow.',                        price:39,  badge:'Marketing',        bc:'rgba(245,158,11,.15)', bt:'#fbbf24'},
+  {id:14,cat:'marketing',  icon:'🏆', name:'SEO Package (3 Months)',         desc:'On-page SEO, keyword research, backlink building & monthly ranking progress reports.',                    price:89, badge:'Marketing',        bc:'rgba(245,158,11,.15)', bt:'#fbbf24'},
+  {id:15,cat:'marketing',  icon:'📊', name:'Lead Generation Funnel',         desc:'Landing page + form + email automation for capturing, tracking and nurturing business leads online.',             price:69, badge:'Marketing',        bc:'rgba(245,158,11,.15)', bt:'#fbbf24'},
+  {id:16,cat:'design',     icon:'🎨', name:'Logo & Brand Identity',          desc:'Professional logo with brand colors, fonts, and a basic brand guidelines kit (PDF).',                     price:29,  badge:'Graphic Design',   bc:'rgba(236,72,153,.14)', bt:'#f472b6'},
+  {id:17,cat:'design',     icon:'🖼️',name:'Social Media Post Pack (10)',    desc:'10 custom branded posts for Instagram/Facebook. Canva or PSD editable files included.',                  price:19,  badge:'Graphic Design',   bc:'rgba(236,72,153,.14)', bt:'#f472b6'},
+  {id:18,cat:'design',     icon:'📰', name:'Flyer / Poster Design',          desc:'Eye-catching flyer or promotional poster — print-ready and digital formats included.',                    price:9,  badge:'Graphic Design',   bc:'rgba(236,72,153,.14)', bt:'#f472b6'},
+  {id:19,cat:'design',     icon:'📇', name:'Business Card Design',           desc:'Professional double-sided business card design. Print-ready 300 DPI files + digital version.',           price:7,   badge:'Graphic Design',   bc:'rgba(236,72,153,.14)', bt:'#f472b6'},
+  {id:20,cat:'design',     icon:'🖥️',name:'Banner / Billboard Design',      desc:'Large format banner, hoarding or billboard design for outdoor or digital advertising.',                  price:12,  badge:'Graphic Design',   bc:'rgba(236,72,153,.14)', bt:'#f472b6'},
+  {id:21,cat:'design',     icon:'🖼️',name:'Photo Restoration',              desc:'Restore and repair damaged, torn, faded, or old photographs to crisp HD quality.',                       price:9,   badge:'Graphic Design',   bc:'rgba(236,72,153,.14)', bt:'#f472b6'},
+  {id:22,cat:'media',      icon:'🎬', name:'Product / Promo Video (60s)',    desc:'60-second promotional video with motion graphics, voiceover, captions & background music.',              price:59,  badge:'Video & Photo',    bc:'rgba(6,182,212,.14)',  bt:'#22d3ee'},
+  {id:23,cat:'media',      icon:'📸', name:'Product Photo Editing (10)',     desc:'Professional editing and retouching of 10 product images for e-commerce or social media.',               price:19,  badge:'Video & Photo',    bc:'rgba(6,182,212,.14)',  bt:'#22d3ee'},
+  {id:24,cat:'media',      icon:'🎞️',name:'Reels / Short Video (15s)',      desc:'Trendy 15-second Instagram / YouTube Shorts reel with transitions, text overlays & music.',             price:24,  badge:'Video & Photo',    bc:'rgba(6,182,212,.14)',  bt:'#22d3ee'},
+  {id:25,cat:'media',      icon:'📄', name:'Business PDF / Brochure',        desc:'Professional multi-page business brochure or service catalog — print & digital PDF.',                   price:29,  badge:'Video & Photo',    bc:'rgba(6,182,212,.14)',  bt:'#22d3ee'},
+  {id:26,cat:'automation', icon:'🤖', name:'WhatsApp Auto-Reply Bot',        desc:'Automated chatbot for greetings, FAQs, price lists, service info sharing & instant lead capture.',              price:59, badge:'Automation',       bc:'rgba(124,58,237,.18)', bt:'#a78bfa'},
+  {id:27,cat:'automation', icon:'📅', name:'Online Booking System',          desc:'Automated appointment booking with confirmations & reminders for clinics, salons, coaches.',             price:79, badge:'Automation',       bc:'rgba(124,58,237,.18)', bt:'#a78bfa'},
+  {id:28,cat:'automation', icon:'📋', name:'Lead Tracker & CRM Setup',       desc:'Google Sheets or Notion-based CRM with auto-sync, follow-up reminders & pipeline view.',               price:34,  badge:'Automation',       bc:'rgba(124,58,237,.18)', bt:'#a78bfa'},
+  {id:29,cat:'automation', icon:'⚙️', name:'Zapier / Make Automation',       desc:'Connect your apps — auto-sync leads, trigger WhatsApp messages, update sheets automatically.',          price:44,  badge:'Automation',       bc:'rgba(124,58,237,.18)', bt:'#a78bfa'},
+  {id:30,cat:'automation', icon:'🔒', name:'Monthly Website Maintenance',    desc:'Monthly updates, security scans, backups, speed optimization & priority WhatsApp support.',            price:29,  badge:'Automation',       bc:'rgba(124,58,237,.18)', bt:'#a78bfa'},
+];
+
+const TESTIMONIALS=[
+  {name:'Priya Mehta',      biz:'Sunrise Health, New York',      text:'Infinity Media Works built our landing page and set up our full automation workflow in under a week. Customer inquiries doubled within 2 weeks!', rating:5, av:'PM'},
+  {name:'Dr. Arjun Singh',  biz:'CareFirst Clinic, Delhi',       text:'The online booking system saves us 2 hours every day. Patients love how easy it is to book appointments. Truly professional team.',        rating:5, av:'AS'},
+  {name:'Kavita Reddy',     biz:'Trendy Threads, Hyderabad',     text:'Our Instagram went from zero to 2000 real followers in a month. The social media posts are beautiful and perfectly on-brand.',              rating:5, av:'KR'},
+  {name:'Rohit Gupta',      biz:'TechStart Solutions, Pune',     text:'Got our complete 5-page website at an unbelievable price. SEO is already bringing in organic traffic after just 6 weeks. 10/10!',          rating:5, av:'RG'},
+  {name:'Ananya Joshi',     biz:'FitLife Coaching, London',   text:'The link-in-bio page and email automation they set up has completely changed how I get coaching clients. Highly recommend!',                rating:5, av:'AJ'},
+  {name:'Suresh Kumar',     biz:'Spice & Co., Toronto',    text:'Photo editing and e-commerce store setup was done perfectly. Orders come in daily now. Best investment I made for my small business.',      rating:5, av:'SK'},
+];
+
+const WHY=[
+  {icon:'⚡', title:'Lightning Fast',          desc:'Most projects delivered in 3–7 working days. Rush delivery available.'},
+  {icon:'💰', title:'Starts from $7',           desc:'Competitive global pricing for startups, small businesses, and personal brands worldwide.'},
+  {icon:'📱', title:'Mobile-First Design',      desc:'Every deliverable is built mobile-first. 100% responsive across all devices.'},
+  {icon:'🔄', title:'Free Revisions',           desc:'We revise until you are 100% happy — no extra charges for reasonable changes.'},
+  {icon:'🔒', title:'100% Ownership',           desc:'All files, code & assets are handed over to you. No lock-ins ever.'},
+  {icon:'🎯', title:'Result-Oriented',          desc:'We optimize for real outcomes — more leads, more sales, more growth.'},
+  {icon:'🌍', title:'Global Remote Service',     desc:'Serving clients across every continent — fully remote, async-friendly, in English & multiple languages.'},
+  {icon:'📞', title:'WhatsApp Support',          desc:'Direct WhatsApp support during business hours. Quick replies, no email chains.'},
+];
+
+const FAQS=[
+  {q:'What types of businesses do you work with?',             a:'We work with pharmacies, clinics, retail stores, restaurants, coaches, educational institutes, startups, content creators, and any business worldwide looking to grow digitally.'},
+  {q:'How long does it take to complete a project?',           a:'Most projects are delivered within 3–7 working days depending on complexity. Urgent delivery is also available. After you inquire, we\'ll give you an exact timeline during our free consultation call.'},
+  {q:'Do I need technical knowledge to work with you?',        a:'Absolutely not. We handle everything from start to finish. You simply share your requirements and we take care of all the technical work. No jargon, no confusion.'},
+  {q:'Are there any hidden charges or recurring fees?',        a:'No hidden charges — ever. Our pricing is transparent and flat. Any third-party costs (like domain or hosting) are clearly informed upfront before you pay anything.'},
+  {q:'Will I own the files and code after delivery?',          a:'Yes — 100%. All files, code, designs, and assets are fully transferred to you upon final payment. No lock-ins, no monthly retainer unless you choose our optional maintenance plan.'},
+  {q:'Can I request changes after the project is delivered?',  a:'Yes. All packages include free revision rounds. Minor changes are also accommodated free of cost within 15–30 days of delivery, depending on the package.'},
+  {q:'How do I get a price quote for my specific project?',    a:'Use the Quote Calculator on this page for an instant estimate. For an accurate official quote, click "Inquire Now" or message us on WhatsApp — we respond within 2–4 hours.'},
+  {q:'What payment methods do you accept?',            a:'For Indian clients we accept Bank Transfer and UPI. For international clients we accept PayPal and major cryptocurrencies (Bitcoin, Ethereum, USDT). All payments are secure and receipts are provided.'},
+  {q:'Do you work with clients outside your city?',            a:'Yes, we work 100% remotely with clients across the globe. Everything is handled smoothly via WhatsApp, email, and video calls. Timezone and distance are never a barrier.'},
+];
+
+/* ── STATE ─────────────────────────────────────────────── */
+let cart=[];
+
+/* ── RENDER SERVICES ────────────────────────────────────── */
+function renderSvc(filter){
+  const grid=document.getElementById('svc-grid');
+  if(!grid)return;
+  const list=(!filter||filter==='all')?SVC:SVC.filter(s=>s.cat===filter);
+  grid.innerHTML=list.map(s=>{
+    const inc=cart.some(c=>c.id===s.id);
+    return`<div class="card${inc?' sel':''}" id="sc${s.id}" onclick="toggleSvc(${s.id})" style="cursor:pointer;">
+      <div style="display:flex;align-items:start;justify-content:space-between;margin-bottom:10px;">
+        <span class="badge" style="background:${s.bc};color:${s.bt};">${s.badge}</span>
+        <div style="width:20px;height:20px;border-radius:5px;border:2px solid ${inc?'#7c3aed':'rgba(124,58,237,.28)'};background:${inc?'linear-gradient(135deg,#7c3aed,#4f46e5)':'transparent'};display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;">
+          ${inc?'<svg width="11" height="11" fill="none" stroke="white" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>':''}
+        </div>
+      </div>
+      <div style="font-size:1.7rem;margin-bottom:8px;">${s.icon}</div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;margin-bottom:7px;color:#e2e0f0;">${s.name}</h3>
+      <p style="font-size:.76rem;color:#6b6890;line-height:1.58;margin-bottom:14px;">${s.desc}</p>
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;background:linear-gradient(135deg,#c4b5fd,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$${s.price.toLocaleString('en-US')}</span>
+        <span style="font-size:.7rem;color:${inc?'#10b981':'#6b6890'};font-weight:600;">${inc?'✓ Added':'+ Add'}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function filterSvc(cat,btn){
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
+  if(btn)btn.classList.add('on');
+  renderSvc(cat);
+}
+
+/* ── TOGGLE SERVICE ─────────────────────────────────────── */
+function toggleSvc(id){
+  const s=SVC.find(x=>x.id===id);
+  if(!s)return;
+  const idx=cart.findIndex(c=>c.id===id);
+  if(idx>=0){cart.splice(idx,1);toast('Removed: '+s.name);}
+  else{cart.push(s);toast('Added: '+s.name+' — $'+s.price.toLocaleString('en-US'));}
+  updateCart();
+  renderSvc(document.querySelector('.tab.on')?.textContent?.trim()==='All Services'?'all':document.querySelector('.tab.on')?.getAttribute('onclick')?.match(/'([^']+)'/)?.[1]||'all');
+  renderQuickAdd();
+}
+
+/* ── UPDATE CART ────────────────────────────────────────── */
+function updateCart(){
+  const total=cart.reduce((a,c)=>a+c.price,0);
+  const fmt='$'+total.toLocaleString('en-US');
+
+  // Badge
+  const cb=document.getElementById('cbadge');
+  if(cb){cb.textContent=cart.length;cb.className=cart.length?'on':'';}
+
+  // Summary total
+  const st=document.getElementById('sum-total');
+  if(st)st.textContent=fmt;
+  const ct=document.getElementById('cart-total');
+  if(ct)ct.textContent=fmt;
+
+  // Summary list (calculator section)
+  const sl=document.getElementById('sum-list');
+  if(sl){
+    sl.innerHTML=cart.length?
+      cart.map(c=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(124,58,237,.09);">
+        <div style="display:flex;align-items:center;gap:7px;min-width:0;">
+          <span style="font-size:.9rem;flex-shrink:0;">${c.icon}</span>
+          <span style="font-size:.78rem;color:#c4b5fd;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${c.name}</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:7px;flex-shrink:0;">
+          <span style="font-size:.8rem;font-weight:700;color:#a78bfa;">$${c.price.toLocaleString('en-US')}</span>
+          <button onclick="toggleSvc(${c.id})" style="background:rgba(239,68,68,.1);border:none;border-radius:4px;padding:2px 6px;cursor:pointer;color:#f87171;font-size:.68rem;font-weight:700;">✕</button>
+        </div>
+      </div>`).join('')
+    :'<p style="font-size:.8rem;color:#6b6890;text-align:center;padding:16px 0;">No services selected yet.<br/>Click any card above to start.</p>';
+  }
+
+  // Cart panel items
+  const ci=document.getElementById('cart-items');
+  if(ci){
+    ci.innerHTML=cart.length?
+      cart.map(c=>`<div style="display:flex;gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid rgba(124,58,237,.09);">
+        <div style="width:40px;height:40px;border-radius:9px;background:rgba(124,58,237,.14);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">${c.icon}</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-weight:600;font-size:.85rem;color:#e2e0f0;margin-bottom:3px;">${c.name}</div>
+          <div style="font-size:.7rem;color:#6b6890;margin-bottom:7px;">${c.desc.substring(0,65)}...</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:.95rem;color:#a78bfa;">$${c.price.toLocaleString('en-US')}</span>
+            <button onclick="toggleSvc(${c.id})" style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.18);border-radius:6px;padding:3px 9px;cursor:pointer;color:#f87171;font-size:.7rem;font-weight:600;transition:all .2s;">Remove</button>
+          </div>
+        </div>
+      </div>`).join('')
+    :'<div style="text-align:center;padding:50px 16px;"><div style="font-size:2.8rem;margin-bottom:14px;">🛒</div><p style="color:#6b6890;font-size:.83rem;">Your cart is empty.<br/>Explore services above to add items.</p></div>';
+  }
+}
+
+/* ── CART OPEN / CLOSE ──────────────────────────────────── */
+function openCart(){
+  document.getElementById('cart-panel').classList.add('open');
+  document.getElementById('cart-ov').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function closeCart(){
+  document.getElementById('cart-panel').classList.remove('open');
+  document.getElementById('cart-ov').classList.remove('on');
+  document.body.style.overflow='';
+}
+function clearCart(){
+  cart=[];updateCart();
+  renderSvc(document.querySelector('.tab.on')?.getAttribute('onclick')?.match(/'([^']+)'/)?.[1]||'all');
+  renderQuickAdd();
+  toast('Cart cleared');
+}
+
+/* ── WHATSAPP CART ──────────────────────────────────────── */
+function sendCartWA(){
+  if(!cart.length){toast('Add at least one service first!');return;}
+  const total=cart.reduce((a,c)=>a+c.price,0);
+  let msg='Hello Infinity Media Works! 👋\n\nI am interested in the following services:\n\n';
+  cart.forEach((c,i)=>msg+=`${i+1}. ${c.icon} ${c.name} — $${c.price.toLocaleString('en-US')}\n`);
+  msg+=`\n💰 Estimated Total: $${total.toLocaleString('en-US')}\n\nPlease confirm availability and final pricing. Thank you!`;
+  window.open('https://wa.me/919204520892?text='+encodeURIComponent(msg),'_blank');
+}
+
+/* ── QUICK ADD ──────────────────────────────────────────── */
+function renderQuickAdd(){
+  const el=document.getElementById('quick-add');
+  if(!el)return;
+  const pop=[1,2,3,5,16,18,11,26];
+  el.innerHTML=pop.map(id=>{
+    const s=SVC.find(x=>x.id===id);if(!s)return'';
+    const inc=cart.some(c=>c.id===id);
+    return`<button onclick="toggleSvc(${s.id})" style="display:flex;align-items:center;gap:9px;padding:11px 12px;border-radius:10px;border:1px solid ${inc?'#7c3aed':'rgba(124,58,237,.18)'};background:${inc?'rgba(124,58,237,.18)':'rgba(20,14,40,.55)'};cursor:pointer;text-align:left;transition:all .2s;width:100%;" onmouseover="this.style.borderColor='rgba(124,58,237,.5)'" onmouseout="this.style.borderColor='${inc?'#7c3aed':'rgba(124,58,237,.18)'}'">
+      <span style="font-size:1.1rem;flex-shrink:0;">${s.icon}</span>
+      <div style="min-width:0;overflow:hidden;">
+        <div style="font-size:.76rem;font-weight:600;color:#c4b5fd;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${s.name}</div>
+        <div style="font-size:.68rem;color:#6b6890;margin-top:1px;">$${s.price.toLocaleString('en-US')}</div>
+      </div>
+    </button>`;
+  }).join('');
+}
+
+/* ── TESTIMONIALS ───────────────────────────────────────── */
+function renderTestimonials(){
+  const el=document.getElementById('tgrid');
+  if(!el)return;
+  el.innerHTML=TESTIMONIALS.map(t=>`
+    <div class="card" style="cursor:default;">
+      <div class="stars" style="font-size:.95rem;margin-bottom:12px;">${'★'.repeat(t.rating)}</div>
+      <p style="font-size:.82rem;color:#a5a3c2;line-height:1.72;margin-bottom:18px;font-style:italic;">"${t.text}"</p>
+      <div style="display:flex;align-items:center;gap:11px;">
+        <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--brand),#4f46e5);display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:.76rem;color:white;flex-shrink:0;">${t.av}</div>
+        <div>
+          <div style="font-weight:700;font-size:.85rem;color:#e2e0f0;">${t.name}</div>
+          <div style="font-size:.7rem;color:#6b6890;margin-top:1px;">${t.biz}</div>
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+/* ── WHY CHOOSE ─────────────────────────────────────────── */
+function renderWhy(){
+  const el=document.getElementById('why-grid');
+  if(!el)return;
+  el.innerHTML=WHY.map(w=>`
+    <div class="card" style="cursor:default;">
+      <div style="font-size:1.4rem;margin-bottom:10px;">${w.icon}</div>
+      <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;margin-bottom:6px;color:#e2e0f0;">${w.title}</h3>
+      <p style="font-size:.76rem;color:#6b6890;line-height:1.6;">${w.desc}</p>
+    </div>`).join('');
+}
+
+/* ── FAQ ────────────────────────────────────────────────── */
+function renderFAQ(){
+  const el=document.getElementById('faq-list');
+  if(!el)return;
+  el.innerHTML=FAQS.map((f,i)=>`
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(${i})">
+        <span>${f.q}</span>
+        <svg id="fi${i}" class="faq-ico" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+      </button>
+      <div id="fa${i}" class="faq-a">
+        <p style="font-size:.85rem;color:#8d8aab;line-height:1.72;">${f.a}</p>
+      </div>
+    </div>`).join('');
+}
+
+function toggleFaq(i){
+  const a=document.getElementById('fa'+i),ic=document.getElementById('fi'+i);
+  const was=a.classList.contains('open');
+  document.querySelectorAll('.faq-a').forEach(x=>x.classList.remove('open'));
+  document.querySelectorAll('.faq-ico').forEach(x=>x.classList.remove('open'));
+  if(!was){a.classList.add('open');ic.classList.add('open');}
+}
+
+/* ── CONTACT FORM ───────────────────────────────────────── */
+function submitForm(e){
+  e.preventDefault();
+  const name=document.getElementById('f-name').value.trim();
+  const phone=document.getElementById('f-phone').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const biz=document.getElementById('f-biz').value;
+  const msg=document.getElementById('f-msg').value.trim();
+  if(!name||!phone||!msg){toast('Please fill all required fields.');return;}
+  const btn=document.getElementById('sbtn');
+  btn.textContent='Sending...';btn.disabled=true;
+  setTimeout(()=>{
+    const wa=`New Inquiry from Website! 🌐\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n📧 Email: ${email||'N/A'}\n🏪 Business: ${biz||'N/A'}\n\n💬 Message:\n${msg}`;
+    window.open('https://wa.me/919204520892?text='+encodeURIComponent(wa),'_blank');
+    btn.textContent='✓ Sent! Check WhatsApp';
+    btn.style.background='linear-gradient(135deg,#10b981,#059669)';
+    toast('Inquiry sent! We\'ll respond within 2–4 hours.');
+    setTimeout(()=>{
+      btn.textContent='Send Inquiry';btn.disabled=false;btn.style.background='';
+      document.getElementById('cform').reset();
+    },4000);
+  },700);
+}
+
+/* ── TOAST ──────────────────────────────────────────────── */
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('on');
+  clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('on'),3200);
+}
+
+/* ── MOBILE MENU ────────────────────────────────────────── */
+function toggleMob(){document.getElementById('mob-menu').classList.toggle('open');}
+function closeMob(){document.getElementById('mob-menu').classList.remove('open');}
+
+/* ── INIT ───────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded',()=>{
+  renderSvc('all');
+  renderQuickAdd();
+  renderTestimonials();
+  renderWhy();
+  renderFAQ();
+  updateCart();
+});
+
+</script>
+</body>
+</html>
